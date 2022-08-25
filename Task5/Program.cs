@@ -9,4 +9,7 @@ Console.WriteLine("Введите первое число ");
 int A = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число ");
 int B = int.Parse(Console.ReadLine());
-Console.WriteLine(A % B == 0 || B % A == 0 ? "да" : "нет");
+
+int min = A>B ? B:A;
+int max = B>A ? B:A;
+Console.WriteLine(min*min == max ? "да" : "нет");
